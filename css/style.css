@@ -318,6 +318,16 @@ abbr {
   .balance-background {
     height: 120px;
   }
+
+  #left-sidebar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: fit-content;
+    padding: 20px;
+    border-end-end-radius: 20px;
+  }
 }
 
 .mobile-bottom-nav {

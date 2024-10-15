@@ -30,6 +30,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
+
+    <link rel="stylesheet" href="./css/swiperjs.css">
   </head>
 
   <body>
@@ -61,41 +63,15 @@
       </nav>
     </header>
     
-    <div id="mobileMenu" class="mobile-menu">
-      <div class="mobile-menu-content">
-        <div class="menu-section">
-          <h2>Main Menu</h2>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="#"><i class="fas fa-home"></i> Home</a></li>
-            <li class="list-group-item"><a href="#"><i class="fas fa-file-alt"></i> Orders</a></li>
-            <li class="list-group-item"><a href="#"><i class="fas fa-wallet"></i> Funds</a></li>
-            <li class="list-group-item"><a href="#"><i class="fas fa-user"></i> My Profile</a></li>
-          </ul>
-        </div>
-        <div class="menu-section">
-          <h2>Account Menu</h2>
-          <ul class="list-group">
-            <li class="list-group-item"><a href="#">Inbox</a></li>
-            <li class="list-group-item"><a href="#">Settings</a></li>
-            <li class="list-group-item"><a href="#">My Tickets</a></li>
-            <li class="list-group-item"><a href="#">Refer a friend</a></li>
-            <li class="list-group-item"><a href="#">Logout</a></li>
-          </ul>
-        </div>
-        <div class="support-section">
-          <h3>Need Support?</h3>
-          <p>Send a message to our support</p>
-          <button class="btn btn-primary">New Ticket</button>
-        </div>
-      </div>
-    </div>
     
 
-    <!-- Main Content  -->
-    <main class="row g-0">
+    <!-- Main -->
+    <main class="row g-0 position-relative">
+      
       <!-- Left Sidebar -->
       <nav
-        class="left-div col-lg-3 col-xl-3 d-none d-md-none d-lg-block d-xl-block ps-3 ps-xl-4 bg-white shadow-sm"
+        class="left-div col-lg-3 col-xl-3 ps-3 ps-xl-4 bg-white shadow-sm"
+        id="left-sidebar"
       >
         <div class="menu-opt pt-3 fw-semibold">Main Menu</div>
         <ul class="list-group pt-3 ps-4">
@@ -182,228 +158,93 @@
           </div>
 
           <!-- Carousel section -->
-          <div class="Trending pt-3">
-            <h5 class="fw-light">Trending Services</h5>
-            <div class="trending-carousel-container">
-              <button class="trending-nav-btn prev-btn" aria-label="Previous">
-                &lt;
-              </button>
-              <div class="trending-carousel">
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+          <swiper-container class="mySwiper" init="false">
+            <swiper-slide>
+                <div class="row mx-auto rounded shadow p-3">
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <img src="./img/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
                     </div>
-                  </div>
-                </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+                    <div class="col-9">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h5>Instagram</h5>
+                            <p>#2.34</p>
+                        </div>
+                        <p>
+                            Instagram - Mixed Data Scrape
+                            ( Username-Comment -Location-Like-Hashtag )
+                        </p>
                     </div>
-                  </div>
                 </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="row mx-auto rounded shadow p-3">
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <img src="./assets/image/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
                     </div>
-                  </div>
-                </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+                    <div class="col-9">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h5>Instagram</h5>
+                            <p>#2.34</p>
+                        </div>
+                        <p>
+                            Instagram - Mixed Data Scrape
+                            ( Username-Comment -Location-Like-Hashtag )
+                        </p>
                     </div>
-                  </div>
                 </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="row mx-auto rounded shadow p-3">
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <img src="./assets/image/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
                     </div>
-                  </div>
-                </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+                    <div class="col-9">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h5>Instagram</h5>
+                            <p>#2.34</p>
+                        </div>
+                        <p>
+                            Instagram - Mixed Data Scrape
+                            ( Username-Comment -Location-Like-Hashtag )
+                        </p>
                     </div>
-                  </div>
                 </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="row mx-auto rounded shadow p-3">
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <img src="./assets/image/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
                     </div>
-                  </div>
-                </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+                    <div class="col-9">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h5>Instagram</h5>
+                            <p>#2.34</p>
+                        </div>
+                        <p>
+                            Instagram - Mixed Data Scrape
+                            ( Username-Comment -Location-Like-Hashtag )
+                        </p>
                     </div>
-                  </div>
                 </div>
-                <div class="trending-item">
-                  <div class="d-flex align-items-center gap-3">
-                    <img
-                      src="./img/3225191_app_instagram_logo_media_popular_icon.png"
-                      alt="Instagram"
-                      class="trending-icon"
-                    />
-                    <div>
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <span class="trending-service">Instagram</span>
-                        <span class="trending-price">₦2.30</span>
-                      </div>
-                      <div class="trending-description">
-                        Instagram - Mixed Data Scrape
-                      </div>
-                      <div class="trending-details">
-                        ( Username-Comment -Location-Like-Hashtag )
-                      </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="row mx-auto rounded shadow p-3">
+                    <div class="col-3 d-flex justify-content-center align-items-center">
+                        <img src="./assets/image/3225191_app_instagram_logo_media_popular_icon.png" alt="" class="w-100">
                     </div>
-                  </div>
+                    <div class="col-9">
+                        <div class="d-flex justify-content-between align-items-start">
+                            <h5>Instagram</h5>
+                            <p>#2.34</p>
+                        </div>
+                        <p>
+                            Instagram - Mixed Data Scrape
+                            ( Username-Comment -Location-Like-Hashtag )
+                        </p>
+                    </div>
                 </div>
-                <!-- Add more trending-item divs for additional carousel items -->
-              </div>
-              <button class="trending-nav-btn next-btn" aria-label="Next">
-                &gt;
-              </button>
-              <div class="trending-pagination"></div>
-            </div>
-          </div>
+            </swiper-slide>
+          </swiper-container>
 
           <!-- Social Media Section -->
           <div class="media pt-5">
@@ -594,7 +435,10 @@
       </div>
     </nav>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
     <script defer src="./js/bootstrap.bundle.min.js"></script>
     <script defer src="./js/main.js"></script>
+
+    <script src="./js/swiper.js"></script>
   </body>
 </html>
